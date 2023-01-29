@@ -51,5 +51,5 @@ export const throttle = (fn: () => any, delay: number) => {
           fn.apply(context, args);
         }, wait);
       }
-    };
-  };
+    }
+  }
