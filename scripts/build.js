@@ -9,16 +9,10 @@ export default [{
     output: [{
         file: pkg.main,
         format: "cjs",
-        globals: {
-          lodash: "-"
-        }
       },
       {
         file: pkg.module,
         format: "es",
-        globals: {
-          lodash: "-"
-        }
       },
       {
         file: pkg.browser,

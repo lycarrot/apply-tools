@@ -1,2 +1,2 @@
-export * from "lodash";
 export * from "./frequency";
+export * from "./object";
