@@ -15,7 +15,7 @@ export const throttle = (fn: () => any, delay: number) => {
         fn();
         called = true;
         setTimeout(() => {
-          called = false
+          called = false;
         }, delay);
       } else {
         timeout = setTimeout(fn, delay);
@@ -31,7 +31,7 @@ export const throttle = (fn: () => any, delay: number) => {
    * @returns 
    */
   export const debounce = (fn:() => any, wait, immediate?:boolean) => {
-    let timeout: ReturnType<typeof setTimeout>
+    let timeout: ReturnType<typeof setTimeout>;
     return function () {
       const context = this;
       const args: any = arguments;
@@ -51,5 +51,5 @@ export const throttle = (fn: () => any, delay: number) => {
           fn.apply(context, args);
         }, wait);
       }
-    }
-  }
+    };
+  };

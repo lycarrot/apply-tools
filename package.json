@@ -18,19 +18,21 @@
     "@rollup/plugin-json": "^6.0.0",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-typescript": "^11.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
     "eslint": "^8.32.0",
+    "lodash": "^4.17.21",
     "rollup": "^3.11.0",
-    "rollup-plugin-typescript2": "^0.34.1",
     "tslib": "^2.5.0",
     "typescript": "^4.9.4"
   },
   "keywords": [
-		"utils",
-		"throttle",
-		"debounce"
-	],
+    "utils",
+    "throttle",
+    "debounce"
+  ],
   "repository": {
-		"type": "git",
-		"url": "https://github.com/lycarrot/util-lib-tools.git"
-	}
+    "type": "git",
+    "url": "https://github.com/lycarrot/util-lib-tools.git"
+  }
 }
