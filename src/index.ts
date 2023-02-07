@@ -1,2 +1,2 @@
-export  * from "./frequency";
-export * from "./object";
+      export  * from "./frequency";
+     export * from "./object";
