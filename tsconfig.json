@@ -8,9 +8,8 @@
             "es2017",
             "dom"
         ],
-        "sourceMap": true,
         "declaration": true,
-        "declarationDir": "lib/types",
+        "declarationDir": "types",
         "typeRoots": [
             "node_modules/@types"
         ],

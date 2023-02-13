@@ -6,9 +6,10 @@
   "module": "lib/index.esm.js",
   "browser": "lib/index.umd.js",
   "typings": "lib/types/index.d.ts",
+  "type": "module",
   "scripts": {
-    "build": "rollup -c ./scripts/build.js --bundleConfigAsCjs",
-    "build:watch": "rollup -w -c ./scripts/build.js --bundleConfigAsCjs",
+    "build": "rollup -c ./scripts/build.js ",
+    "build:watch": "rollup -w -c ./scripts/build.js",
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.md,.json --max-warnings 0 --cache"
   },
   "author": "lycarrot",
@@ -26,7 +27,6 @@
     "eslint-plugin-jsonc": "^2.6.0",
     "eslint-plugin-markdown": "^3.0.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "lodash": "^4.17.21",
     "prettier": "^2.8.3",
     "rollup": "^3.11.0",
     "tslib": "^2.5.0",

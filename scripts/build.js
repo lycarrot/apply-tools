@@ -1,12 +1,17 @@
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
-import typescript from "rollup-plugin-typescript2";
+import typescript from "@rollup/plugin-typescript";
 import eslint from "@rollup/plugin-eslint";
-import pkg from "../package.json";
+import json from "@rollup/plugin-json";
+import { readFileSync } from "fs";
 
-export default [{
-    input:   '  src/index.ts',
-    output: [{
+const pkg = JSON.parse(readFileSync("./package.json", "utf8"));
+
+export default [
+  {
+    input: "./src/index.ts",
+    output: [
+      {
         file: pkg.main,
         format: "cjs",
       },
@@ -18,22 +23,8 @@ export default [{
         file: pkg.browser,
         name: pkg.name,
         format: "umd",
-        globals: {
-          lodash: "-"
-        }
       },
     ],
-    external: ["lodash"],
-    plugins: [
-      resolve(),
-      commonjs(),
-      typescript({
-        exclude: "node_modules/**",
-        typescript: require("typescript"),
-        useTsconfigDeclarationDir: true,
-      }),
-      eslint()
-    ],
+    plugins: [resolve(), commonjs(), json(), typescript(), eslint()],
   },
-
 ];
