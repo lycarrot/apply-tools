@@ -1,5 +1,5 @@
 {
-  "name": "util-lib-tools",
+  "name": "apply-tools",
   "version": "0.0.0",
   "description": "常用工具方法库",
   "main": "lib/index.cjs.js",

@@ -23,6 +23,7 @@ export const throttle = (fn: () => any, delay: number) => {
   };
 };
 
+
 /**
  * 节流
  * @param fn
