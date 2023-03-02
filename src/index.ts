@@ -1,1 +1,2 @@
-let a = "1111";
+export * from "./frequency";
+export * from "./object";
