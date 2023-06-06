@@ -1,6 +1,6 @@
 {
   "name": "apply-tools",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "常用工具方法库",
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
