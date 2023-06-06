@@ -1,3 +1,8 @@
+/**
+ * 将时间转变成多久前
+ * @param dateTimeStamp
+ * @returns
+ */
 export const getTimeAgo = function (dateTimeStamp: number) {
   let result: string;
   var minute = 1000 * 60; //把分，时，天，周，半个月，一个月用毫秒表示
@@ -17,15 +22,15 @@ export const getTimeAgo = function (dateTimeStamp: number) {
   var weekC = diffValue / week;
   var monthC = diffValue / month;
   if (monthC >= 1 && monthC < 4) {
-    result = " " + parseInt(monthC) + "月前";
+    result = " " + parseInt(String(monthC)) + "月前";
   } else if (weekC >= 1 && monthC < 1) {
-    result = " " + parseInt(weekC) + "周前";
+    result = " " + parseInt(String(weekC)) + "周前";
   } else if (dayC >= 1 && dayC < 7) {
-    result = " " + parseInt(dayC) + "天前";
+    result = " " + parseInt(String(dayC)) + "天前";
   } else if (hourC >= 1 && hourC < 24) {
-    result = " " + parseInt(hourC) + "小时前";
+    result = " " + parseInt(String(hourC)) + "小时前";
   } else if (minC >= 1 && minC < 60) {
-    result = " " + parseInt(minC) + "分钟前";
+    result = " " + parseInt(String(minC)) + "分钟前";
   } else if (diffValue >= 0 && diffValue <= minute) {
     result = "刚刚";
   } else {
